@@ -1,0 +1,118 @@
+.wrapper {
+  margin-top: 30px;
+  background: #fff8f0;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(226, 201, 167, 0.10);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.navBtn {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.navBtn:hover {
+  background-color: #135ca8;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.dayLabel {
+  font-weight: bold;
+  text-align: center;
+  color: #7c6f57;
+  font-size: 15px;
+}
+
+.cell {
+  text-align: center;
+  padding: 10px 4px;
+  border-radius: 6px;
+  border: 1.5px solid #e2c9a7;
+  background-color: #fff8f0;
+  color: #7c6f57;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.15s, background 0.2s;
+}
+
+.cell:hover 
+{
+  transform: scale(1.03);
+}
+
+.present {
+  background-color: #c8f7c5;
+  color: #7c6f57;
+}
+
+.absent {
+  background-color: #f7c5c5;
+  color: #7c6f57;
+}
+
+.recurring {
+  background-color: #f7f3ee;
+  border: 2px dashed #e2c9a7;
+}
+
+.noteIcon {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 12px;
+  color: #7c6f57;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 8px 2px;
+    border-radius: 6px;
+    margin-top: 16px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .navBtn {
+    font-size: 13px;
+    padding: 10px 8px;
+    border-radius: 8px;
+  }
+  .grid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 10px;
+  }
+  .dayLabel {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .cell {
+    font-size: 13px;
+    padding: 8px 0;
+    border-radius: 6px;
+  }
+}

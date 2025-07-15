@@ -1,0 +1,77 @@
+.card {
+  border: 2px solid #135ca8;
+  border-radius: 16px;
+  padding: 20px 18px;
+  margin-bottom: 18px;
+  background: #fff8f0;
+  transition: border 0.3s, box-shadow 0.3s, background 0.2s;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover {
+  background: #f7f3ee;
+  box-shadow: 0 8px 32px rgba(226, 201, 167, 0.13);
+}
+
+.redBorder {
+  border-color: #e53935;
+  box-shadow: 0 0 12px #e5393580, 0 4px 16px rgba(25, 118, 210, 0.10);
+}
+
+.yellowBorder {
+  border-color: #fbc02d;
+  box-shadow: 0 0 12px #fbc02d80, 0 4px 16px rgba(25, 118, 210, 0.10);
+}
+
+.greenBorder {
+  border-color: #43a047;
+  box-shadow: 0 0 12px #43a04780, 0 4px 16px rgba(25, 118, 210, 0.10);
+}
+
+.warning {
+  color: #f2a07b;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+}
+
+.safe {
+  color: #7c6f57;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #7c6f57;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #7c6f57;
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 10px 4px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .warning, .safe, .card p {
+    font-size: 0.95rem;
+  }
+  .quickBtns {
+    gap: 6px !important;
+  }
+}
+  

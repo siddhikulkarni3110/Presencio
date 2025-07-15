@@ -1,0 +1,157 @@
+body, html {
+  min-height: 100vh;
+  background: #fff8f0;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 10px 28px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #a85c06;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(226, 201, 167, 0.10);
+  min-height: 90vh;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #7c6f57;
+  letter-spacing: 1px;
+}
+
+.actionBtn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.07);
+}
+
+.actionBtn:hover, .actionBtn:focus {
+  background: #135ca8;
+  transform: scale(1.03);
+}
+
+.editBtn {
+  background: #1976d2;
+  color: #fff;
+}
+
+.editBtn:hover, .editBtn:focus {
+  background: #135ca8;
+  color: #fff;
+}
+
+.deleteBtn {
+  background: #1976d2;
+  color: #fff;
+}
+
+.deleteBtn:hover, .deleteBtn:focus {
+  background: #135ca8;
+  color: #fff;
+}
+
+.modalWrapper {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* === PROFILE DROPDOWN SECTION === */
+
+.profileBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.profileSelect {
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border: 2px solid #e2c9a7;
+  border-radius: 10px;
+  background: #fff8f0;
+  color: #7c6f57;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  min-width: 140px;
+}
+
+.profileSelect:focus {
+  outline: none;
+  border-color: #d6b88c;
+}
+
+.addBtn {
+  padding: 16px 20px;
+  background: #1976d2;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.addBtn:hover, .addBtn:focus {
+  background: #135ca8;
+  transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 2vw 10px 2vw;
+    min-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+  .profileBar {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .profileSelect {
+    font-size: 1rem;
+    min-width: 100px;
+    padding: 10px 8px;
+  }
+  .addBtn {
+    font-size: 1rem;
+    padding: 12px 8px;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+}

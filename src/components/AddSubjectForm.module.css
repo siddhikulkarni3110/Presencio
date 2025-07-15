@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 18px 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+  color: #135ca8;
+  background: #f7faff;
+  box-sizing: border-box;
+}
+
+label {
+  color: #135ca8;
+  font-weight: 600;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.dayBtn {
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid #1976d2;
+  background: #f7faff;
+  color: #135ca8;
+  transition: all 0.2s ease;
+}
+
+.dayBtn.active {
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: bold;
+}
+
+.submitBtn {
+  padding: 12px;
+  background-color: #1976d2;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.07);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.submitBtn:hover, .submitBtn:focus {
+  background-color: #135ca8;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .form {
+    gap: 10px;
+    padding: 10px 2px;
+  }
+  input {
+    font-size: 15px;
+    padding: 8px;
+  }
+  .days {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+  }
+  .dayBtn {
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+  .submitBtn {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,14 @@
+.listWrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .emptyMsg {
+    color: #999;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
