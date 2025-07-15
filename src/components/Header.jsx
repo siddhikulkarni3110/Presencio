@@ -42,7 +42,7 @@ function Header({ profiles, currentProfile, setCurrentProfile, addProfile, delet
 
   return (
     <header className={styles.header}>
-      <h1 className={styles.heading}>Attendance Manager</h1>
+      <h1 className={styles.heading}>Presencio</h1>
       <div className={styles.profileWrapper} ref={profileRef}>
         <button
           aria-label="Profile menu"
